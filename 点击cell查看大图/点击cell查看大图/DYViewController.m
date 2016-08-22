@@ -116,7 +116,6 @@ static NSString * const identifier = @"collecitonViewCell";
     DYBaseView *baseView = [[DYBaseView alloc] initWithFrame:self.view.bounds];
     baseView.iconArray = self.iconArray;
     baseView.rectArray = self.rectArray;
-    baseView.collectionView = self.collectionView;
     baseView.index = indexPath.row;
     [[UIApplication sharedApplication].keyWindow addSubview:baseView];
     baseView.backgroundColor = [UIColor blackColor];
@@ -147,7 +146,6 @@ static NSString * const identifier = @"collecitonViewCell";
         CGRect rectInWindow = [cell convertRect:cell.imageView.frame toView:window];
         [array addObject:NSStringFromCGRect(rectInWindow)];
     }
-    self.oldRectArray = array;
     self.rectArray = array;
 }
 

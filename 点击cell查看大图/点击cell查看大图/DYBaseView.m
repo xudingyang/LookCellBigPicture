@@ -16,7 +16,6 @@
 
 #import "DYBaseView.h"
 #import <Masonry.h>
-#import "DYHeroCell.h"
 
 @interface DYBaseView () <UIScrollViewDelegate>
 
