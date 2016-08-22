@@ -116,7 +116,6 @@ static NSString * const identifier = @"collecitonViewCell";
     DYBaseView *baseView = [[DYBaseView alloc] initWithFrame:self.view.bounds];
     baseView.iconArray = self.iconArray;
     baseView.rectArray = self.rectArray;
-    baseView.oldRectArray = self.oldRectArray;
     baseView.collectionView = self.collectionView;
     baseView.index = indexPath.row;
     [[UIApplication sharedApplication].keyWindow addSubview:baseView];

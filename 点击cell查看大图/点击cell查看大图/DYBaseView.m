@@ -114,8 +114,9 @@
     // 上边的图片序号指示器
     UILabel *indexLabel = [[UILabel alloc] init];
     [self addSubview:indexLabel];
+    __weak typeof(self) weakSelf = self;
     [indexLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(self.centerX);
+        make.centerX.equalTo(weakSelf.centerX);
         make.top.equalTo(30);
         make.size.equalTo(CGSizeMake(100, 40));
     }];

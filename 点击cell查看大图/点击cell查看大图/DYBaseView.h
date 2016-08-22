@@ -18,8 +18,7 @@
 @property (strong, nonatomic) UICollectionView *collectionView;
 /** rectArray */
 @property (strong, nonatomic) NSArray<NSString *> *rectArray;
-/** oldRectArray */
-@property (strong, nonatomic) NSArray<NSString *> *oldRectArray;
+
 /** columnCount cell的列数 */
 //@property (assign, nonatomic) NSInteger columnCount;
 
